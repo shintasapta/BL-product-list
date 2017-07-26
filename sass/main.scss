@@ -1,0 +1,60 @@
+body {
+    .ng-scope {
+        background: white;
+    }
+
+    .navbar {
+        margin-bottom: 0;
+        background-color: #d71149;
+        color: white;
+        font-weight: 700;
+        z-index: 9999;
+        border: 0;
+        font-size: 12px !important;
+        line-height: 1.42857143 !important;
+        letter-spacing: 4px;
+        border-radius: 0;
+    }
+    .footer {
+        height: 70px;
+        background: whitesmoke;
+        padding: 25px;
+    }
+
+    .product-list {
+        margin-top: 50px;
+    }
+    .product-wrapper {
+        border: 1px solid #D0D4D4;
+        border-radius: 4px;
+        margin: 15px 0;
+        .cover-item{
+            width: 100%;
+            height: 250px;
+            border-bottom: 1px solid #D0D4D4;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .product-text-wrappper {
+            padding: 15px;
+            .product-name {
+                width: 100%;
+                height: 25px;
+                font-size: 16px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                text-transform: capitalize;
+            }
+            .product-price {
+                color: #a31c48;
+                font-weight: 700;
+            }
+        }
+    }
+
+}

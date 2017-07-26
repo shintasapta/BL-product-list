@@ -1,0 +1,46 @@
+body .ng-scope {
+  background: white; }
+body .navbar {
+  margin-bottom: 0;
+  background-color: #d71149;
+  color: white;
+  font-weight: 700;
+  z-index: 9999;
+  border: 0;
+  font-size: 12px !important;
+  line-height: 1.42857143 !important;
+  letter-spacing: 4px;
+  border-radius: 0; }
+body .footer {
+  height: 70px;
+  background: whitesmoke;
+  padding: 25px; }
+body .product-list {
+  margin-top: 50px; }
+body .product-wrapper {
+  border: 1px solid #D0D4D4;
+  border-radius: 4px;
+  margin: 15px 0; }
+  body .product-wrapper .cover-item {
+    width: 100%;
+    height: 250px;
+    border-bottom: 1px solid #D0D4D4; }
+    body .product-wrapper .cover-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  body .product-wrapper .product-text-wrappper {
+    padding: 15px; }
+    body .product-wrapper .product-text-wrappper .product-name {
+      width: 100%;
+      height: 25px;
+      font-size: 16px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-transform: capitalize; }
+    body .product-wrapper .product-text-wrappper .product-price {
+      color: #a31c48;
+      font-weight: 700; }
+
+/*# sourceMappingURL=main.css.map */

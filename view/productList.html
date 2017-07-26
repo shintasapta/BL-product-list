@@ -1,0 +1,39 @@
+<div class="container product-list">
+    <div class="jumbotron text-center">
+            <form>
+                <div class="input-group col-sm-8 col-sm-offset-2">
+                <input type="text" class="form-control input-lg" size="50" placeholder="Ketik amin untuk cari jodoh.." ng-model="keyword" required>
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-danger btn-lg" ng-click="plctrl.searchKeyword(keyword)">Cari</button>
+                </div>
+                </div>
+            </form>
+    </div>
+    <div class="col-sm-3 col-xs-12 pull-right">
+        <form class="form-inline">
+            <div class="form-group">
+                <span>Urutkan : </span>
+            </div>
+            <div class="form-group">
+                <select class="form-control" ng-model="sortData">
+                    <option value="update_at">Terbaru</option>
+                    <option value="price">Termurah</option>
+                    <option value="-price">Termahal</option>
+                </select>                
+            </div>
+        </form>
+    </div>
+</div>
+<div class="container">
+    <div class="col-sm-3" ng-repeat="t in data | orderBy:sortData">
+        <div class="product-wrapper">
+            <div class="cover-item" ng-repeat="i in t.images track by $index" ng-show="$index == images_index">
+                <img src="{{i}}" class="img-responsive"/>
+            </div>
+            <div class="product-text-wrappper">
+                <p class="product-name">{{t.name}}</p>
+                <h5 class="product-price">{{t.price | currency : "Rp"}}</h5>
+            </div>
+        </div>
+    </div>
+</div>
